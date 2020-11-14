@@ -1,0 +1,28 @@
+1. How the board will be drawn?
+
+The Maze class has a method called generateMaze and contains a Board class as a field. The
+generateMaze method will use the Randomized Prim's algorithm. First of all, all the inner cell of
+the board will be set to wall. Then a random cell will be picked and marked as visited, and the
+walls around this cell will be added to the wall list. Once the wall list is not empty, a random wall
+will be picked from the wall list, and if only one of two cells the wall blocks is visited, the wall will
+be set to nothing, which means this cell can be passed. Mark this cell as visited and add the walls
+around this cell to the wall list, and remove this cell from the wall list. Repeat the above process
+until the wall list is empty.  
+
+2. How the cats move is handle?
+
+The Game class contains the CatManager class as a field, and it has a method called MoveCats.
+The MoveCats method will loop through the cats in the catManager, and for each cat in the loop,
+a random direction will be generated and passed into the isLegalMove method in the Game class.
+The method will check if it is a legal move. If it is a legal move, return true, and if not, return false.
+If it is true, the cat will be moved to the new position on the board, if not, a new random direction
+will be generated and checked again until it is a legal move.
+
+3. How the user's move is handle?
+
+The TextUI class has a method to ask the keyboard input from the user, and the input will be 
+transferred to left, right, up or down in the method. Then the input will be combined with the 
+current mouse position to get the new position, and the new position will be passed to the 
+isLegalMove method in the Game class, and the method will check if it is a legal move. If it is a legal move, 
+return true, and if not, return false. Once we get the result, if it is true, move the move to the
+new position on the board, and if it is false, request the user to input a legal move. 
