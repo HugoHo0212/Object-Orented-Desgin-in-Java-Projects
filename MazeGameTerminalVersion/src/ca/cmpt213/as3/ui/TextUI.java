@@ -48,8 +48,6 @@ public class TextUI {
     public void showMenu() {
         printWelcomeWords();
         printInstruction();
-        game.setOuterWallsVisible();
-        game.insertGameElementsToMaze();
         while (numOfCollectedCheese < numOfCheeseToCollect) {
             game.revealCellsAroundMouse();
             printMaze();

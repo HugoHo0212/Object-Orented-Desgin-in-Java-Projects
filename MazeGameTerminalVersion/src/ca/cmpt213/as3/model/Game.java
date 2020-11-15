@@ -379,13 +379,13 @@ public class Game {
             CellValueType valueType = maze.getBoard().getCellValue(rowRand, colRand);
             if (valueType == CellValueType.NOTHING) {
                 maze.getBoard().setCellValue(rowRand, colRand, CellValueType.CHEESE);
-//                maze.setBoardCellVisible(rowRand, colRand, true);
+                maze.setBoardCellVisible(rowRand, colRand, true);
                 cheese.setRowPosition(rowRand);
                 cheese.setColPosition(colRand);
                 isDone = true;
             } else if (valueType == CellValueType.CAT) {
                 maze.getBoard().setCellValue(rowRand, colRand, CellValueType.CAT_AND_CHEESE);
-//                maze.setBoardCellVisible(rowRand, colRand, true);
+                maze.setBoardCellVisible(rowRand, colRand, true);
                 cheese.setRowPosition(rowRand);
                 cheese.setColPosition(colRand);
                 isDone = true;
