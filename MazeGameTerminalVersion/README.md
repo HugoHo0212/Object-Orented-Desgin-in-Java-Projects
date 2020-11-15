@@ -19,7 +19,7 @@ These instructions will get you a copy of the project up and running on your loc
 Option 1:
 open the MazeGameTerminalVersion folder in terminal and go to 'src'
 run 'javac ca/cmpt213/as3/Main.java'
-run 'java ca/cmpt213/as3/Main.jav'
+run 'java ca/cmpt213/as3/Main.java'
 ```
 ```
 Option 2:
