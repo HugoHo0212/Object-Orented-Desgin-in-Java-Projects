@@ -1,4 +1,4 @@
-A Minion Tracker Java application
+A Minion Tracker Java application, where the user can add a minion, remove a minion, attribute an evil deed to a minion and list the existing minions 
 
 
 ## Getting Started
@@ -26,6 +26,4 @@ Option 2:
 Open the MinionTracker folder in Intellij IDE and run the Main.java file
 ```
 ### Result
-```
-
-```
+![result_image](https://user-images.githubusercontent.com/37818659/99179035-7a2fbf00-26ce-11eb-9d22-c5ceeefe5770.png)
