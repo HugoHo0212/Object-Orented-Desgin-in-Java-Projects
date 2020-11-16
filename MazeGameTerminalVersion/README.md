@@ -1,4 +1,4 @@
-#Maze Game
+# Maze Game
 A Maze Game Java application, where the user can control a mouse using keyboard to get a piece of cheese to win the game 
 
 
